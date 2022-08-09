@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "857bfd41-818b-4dd8-a15d-3c39c0a2d4f6",
+		"name": "Flask SQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Single Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"demo\",\n    \"age\": 18,\n    \"class\": \"12\",\n    \"mother_name\": \"demo-mother\",\n    \"father_name\": \"demo-father\",\n    \"address\": \"demo-address\",\n    \"phone-number-1\": \"987654210\",\n    \"exam_name\": \"Formative Assessment\",\n    \"grade\": \"O+\",\n    \"physics\": 50,\n    \"chemistry\": 52,\n    \"maths\": 60,\n    \"total\": 162,\n    \"percentage\": 54\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Multiple Records",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"demo\",\n        \"age\": 18,\n        \"class\": \"12\",\n        \"mother_name\": \"demo-mother\",\n        \"father_name\": \"demo-father\",\n        \"address\": \"demo-address\",\n        \"phone-number-1\": \"987654210\",\n        \"exam_name\": \"Formative Assessment\",\n        \"grade\": \"O+\",\n        \"physics\": 50,\n        \"chemistry\": 52,\n        \"maths\": 60,\n        \"total\": 162,\n        \"percentage\": 54\n    },\n    {\n        \"name\": \"demo\",\n        \"age\": 18,\n        \"class\": \"12\",\n        \"mother_name\": \"demo-mother\",\n        \"father_name\": \"demo-father\",\n        \"address\": \"demo-address\",\n        \"phone-number-1\": \"987654210\",\n        \"exam_name\": \"Formative Assessment\",\n        \"grade\": \"O+\",\n        \"physics\": 50,\n        \"chemistry\": 52,\n        \"maths\": 60,\n        \"total\": 162,\n        \"percentage\": 54\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:5000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Single Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/student/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All Records",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Single Record",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/student/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Multiple Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"student"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
